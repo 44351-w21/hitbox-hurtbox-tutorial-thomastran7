@@ -1,5 +1,7 @@
 # Hitbox and Hurtbox tutorial
 
+[Playable Game](https://44351-w21.github.io/hitbox-hurtbox-tutorial-thomastran7/)
+
 ## Assets and Attributions
 
 Character: [Platformer Characters by kenney.nl](https://kenney.nl/assets/platformer-characters)
