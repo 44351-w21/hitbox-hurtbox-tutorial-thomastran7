@@ -20,3 +20,13 @@ func _physics_process(delta):
 		$AnimatedSprite.flip_h = direction > 0
 		$FloorDetector.position.x = $CollisionShape2D.shape.get_extents().x * direction
  
+
+
+func _on_Hurtbox_body_entered(body):
+	speed = 0
+	$AnimatedSprite.play('squish')
+	set_collision_layer_bit(2, false)
+	set_collision_mask_bit(0, false)
+	
+	yield(get_tree().create_timer(2), "timeout")
+	queue_free()
