@@ -27,6 +27,7 @@ func _on_Hurtbox_body_entered(body):
 	$AnimatedSprite.play('squish')
 	set_collision_layer_bit(2, false)
 	set_collision_mask_bit(0, false)
+	body.bounce()
 	
 	yield(get_tree().create_timer(2), "timeout")
 	queue_free()

@@ -26,3 +26,6 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity, Vector2.UP)
 	# friction with lerp, because am lazy
 	velocity.x = lerp(velocity.x, 0, 0.2)
+
+func bounce():
+	velocity.y = 0.5*JUMPFORCE
